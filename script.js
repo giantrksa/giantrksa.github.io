@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navbar scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-            navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            navbar.style.background = 'rgba(4, 4, 4, 0.95)';
+            navbar.style.boxShadow = '0 20px 60px rgba(0, 0, 0, 0.55)';
         } else {
-            navbar.style.background = 'rgba(15, 23, 42, 0.8)';
-            navbar.style.boxShadow = 'none';
+            navbar.style.background = 'rgba(5, 5, 5, 0.85)';
+            navbar.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.35)';
         }
     });
 
