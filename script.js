@@ -525,3 +525,55 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+// ==========================================
+// EXPERIENCE SECTION TOGGLE
+// ==========================================
+function toggleExperience(button) {
+    const card = button.closest('.experience-card');
+    const details = card.querySelector('.exp-details');
+    const toggleText = button.querySelector('.toggle-text');
+
+    if (details.style.display === 'none' || !details.style.display) {
+        // Show details
+        details.style.display = 'block';
+        button.classList.add('active');
+
+        // Update button text based on role
+        if (toggleText.textContent.includes('Projects')) {
+            toggleText.textContent = 'Hide Projects';
+        } else if (toggleText.textContent.includes('Research')) {
+            toggleText.textContent = 'Hide Research';
+        } else if (toggleText.textContent.includes('Product')) {
+            toggleText.textContent = 'Hide Products';
+        } else {
+            toggleText.textContent = 'Hide Details';
+        }
+
+        // Smooth scroll to show the expanded content
+        setTimeout(() => {
+            const detailsTop = details.getBoundingClientRect().top + window.pageYOffset - 100;
+            if (detailsTop < window.pageYOffset) {
+                window.scrollTo({
+                    top: detailsTop,
+                    behavior: 'smooth'
+                });
+            }
+        }, 100);
+    } else {
+        // Hide details
+        details.style.display = 'none';
+        button.classList.remove('active');
+
+        // Update button text based on role
+        if (toggleText.textContent.includes('Projects') || toggleText.textContent.includes('Hide Projects')) {
+            toggleText.textContent = 'View Detailed Projects';
+        } else if (toggleText.textContent.includes('Research') || toggleText.textContent.includes('Hide Research')) {
+            toggleText.textContent = 'View Research Details';
+        } else if (toggleText.textContent.includes('Product') || toggleText.textContent.includes('Hide Products')) {
+            toggleText.textContent = 'View Product Suite';
+        } else {
+            toggleText.textContent = 'View Project Details';
+        }
+    }
+}
