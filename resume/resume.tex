@@ -1,0 +1,334 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{array}
+
+% Colors
+\definecolor{primary}{RGB}{0,102,204}
+\definecolor{secondary}{RGB}{64,64,64}
+\definecolor{accent}{RGB}{0,153,76}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    citecolor=primary
+}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% List formatting
+\setlist[itemize]{nosep,left=0pt,itemsep=1pt,topsep=2pt}
+\renewcommand{\labelitemi}{$\bullet$}
+
+% Custom commands
+\newcommand{\experience}[4]{%
+    \noindent\textbf{#1} \hfill \textit{#2}\\
+    \textit{#3} \hfill #4\vspace{2pt}
+}
+
+\newcommand{\education}[4]{%
+    \noindent\textbf{#1} \hfill \textit{#2}\\
+    \textit{#3} \hfill #4\vspace{2pt}
+}
+
+\newcommand{\project}[2]{%
+    \noindent\textit{#1}\\
+    #2\vspace{3pt}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Compact spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries\color{primary} Gian Antariksa, Ph.D.}\\[3pt]
+    \href{mailto:gian.antariksa@gmail.com}{gian.antariksa@gmail.com} $\mid$ 
+    \href{https://linkedin.com/in/antrks}{linkedin.com/in/antrks} $\mid$ 
+    \href{https://github.com/giantrksa}{github.com/giantrksa} $\mid$
+    \href{https://giantrksa.github.io}{giantrksa.github.io}\\
+    +62 (811) 2787-19 (IDN) $\mid$ +82 10 6893 8443 (ROK)
+\end{center}
+
+\vspace{-2pt}
+
+% Overview
+\section*{OVERVIEW}
+\vspace{-2pt}
+Over the past eight years, my passion for \textbf{Data Science, Machine Learning Operations, Deep Learning, Large Language Models, and Solution Architecture} has grown. This interest is backed by experimental research in optimizing business solutions through Data-Driven Technologies by building end-to-end apps. I am confident that my skills and experiences align well with the requirements for the Machine Learning Engineer/Scientist role. Professionally, I have \textbf{nine+ years} of diverse experience in the Data Science field, working in roles ranging from employee to consultant and project-based positions. I am enthusiastic about contributing AI works in areas such as \textbf{banking, mining, transportation, semiconductor, manufacture, pharmaceuticals, FMCG, media, and oil \& gas}. My academic work is supported by \textbf{15+ publications} in respected journals including IEEE Transactions and Journal of Applied Geophysics, with \textbf{200+ research citations}, highlighting my commitment to the advancement of industrial data science.
+
+\vspace{2pt}
+
+% Education
+\section*{EDUCATION}
+
+\education{Ph.D. Industrial Data Science and Engineering}{2020--2023}{Pusan National University \& Pukyong National University Joint Degree (QS <500)}{CGPA: 4.15/4.50}
+
+\textit{Dissertation:} Geological Interpretation and Prediction for Hydrocarbon Exploration using Machine Learning-Based Approaches\\
+\textit{Advisor:} Prof. Jihwan Lee $\mid$ \textit{Courses:} Deep Learning \& ML, Reinforcement Learning, Industrial Data Analytics
+
+\vspace{4pt}
+
+\education{M.Eng. Engineering Physics}{2018--2020}{Pukyong National University, South Korea}{CGPA: 4.45/4.50}
+
+\textit{Thesis:} Study on Ultraviolet-A of CaSiO$_3$:Ce$^{3+}$ $\mid$ \textit{Advisor:} Prof. Jong Su Kim\\
+\textit{Courses:} Thin Film Technology, Powder Technology, Spectroscopy, Electroluminescence
+
+\vspace{4pt}
+
+\education{B.Sc. Physics}{2012--2016}{Diponegoro University, Indonesia}{CGPA: 3.33/4.00}
+
+\textit{Thesis:} Porosity and Water Saturation Analysis in the Integration of Petrophysics and Multi-attribute Seismic for Reservoir Characterization $\mid$ \textit{Advisor:} Prof. Tony Yulianto\\
+\textit{Courses:} Quantum Physics, Artificial Intelligence, Statistical Physics
+
+\vspace{2pt}
+
+% Working Experience
+\section*{WORKING EXPERIENCE}
+
+\experience{Data Scientist}{Mar 2026 -- Present}{Philip Morris International (PMI), Indonesia}{}
+
+Drive data-driven innovation within PMI's commercial and operational divisions. Develop and deploy machine learning solutions to optimize business processes, consumer analytics, and supply chain intelligence. Leverage advanced AI and cloud technologies to generate actionable insights at scale.
+
+\textit{\textbf{Key Projects:}}
+\begin{itemize}
+    \item \textbf{Consumer Behaviour Analytics \& Segmentation Platform:} Develop end-to-end consumer segmentation framework leveraging unsupervised learning (K-Means, DBSCAN, Gaussian Mixture Models) combined with RFM analytics and AutoML pipelines. Integrate real-time behavioral data streams to enable dynamic segment updating. \textcolor{accent}{\textbf{Value:}} Enable precise targeting and personalization strategies, improving campaign ROI and consumer retention
+    \item \textbf{Demand Forecasting \& Supply Chain Optimization:} Build multi-horizon demand forecasting system using ensemble deep learning models (LSTM, Temporal Fusion Transformers, Prophet) with automatic hyperparameter tuning. Develop inventory optimization algorithms to minimize stockouts and reduce holding costs. \textcolor{accent}{\textbf{Value:}} Improve forecast accuracy and supply chain efficiency, reducing operational costs
+    \item \textbf{Commercial Performance Intelligence Dashboard:} Design and deploy serverless ETL pipelines on AWS (Lambda, Glue, Athena, S3) for consolidating multi-source commercial data. Build interactive Plotly/Dash dashboards for real-time sales and distribution monitoring. \textcolor{accent}{\textbf{Value:}} Accelerate decision-making with near-real-time business intelligence for commercial leadership
+    \item \textbf{AI-Powered Market Intelligence \& NLP Analytics:} Develop NLP pipeline for sentiment analysis and topic modeling on consumer feedback and trade data using fine-tuned transformer models (BERT, RoBERTa) and BERTopic. Integrate LLM-based summarization for automated insight generation. \textcolor{accent}{\textbf{Value:}} Reduce manual analysis effort and surface actionable market signals faster
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Senior Data Scientist}{May 2024 -- Feb 2026}{PT. Mitra Solusi Telematika, Indonesia}{}
+
+Obtain insights by leveraging machine learning algorithms. Develop orchestrated pipelines for analytical purposes and machine learning training. Stay up to date with the latest research and developments in the machine learning field and apply this where applicable. Architected production-scale LLM systems, advanced RAG platforms, and multi-agent AI frameworks with serverless deployment on AWS, achieving up to 60\% LLM cost reduction.
+
+\textit{\textbf{Key Projects:}}
+\begin{itemize}
+    \item \textbf{L2 SAP Incident Ticket Solutions using Agentic AI:} Develop end-to-end serverless multi-agent AI system on AWS Lambda with event-driven architecture. Implemented RAG pipeline using FAISS vector database for incident knowledge retrieval, integrated with GPT-4 and Claude using ReACT framework for automated L2 incident resolution. \textcolor{accent}{\textbf{Value:}} Cost reduction of almost 2\% of budget flowing to L2 vendor; 35\% faster incident resolution time
+    \item \textbf{CV Screening for Recruitment \& Talent Pooling AI Agent:} Develop end-to-end production RAG system with fine-tuned BERT embeddings, semantic chunking, and multi-vector retrieval. Built talent scoring algorithm combining LLM reasoning with ML classifiers using LlamaIndex and Pinecone. \textcolor{accent}{\textbf{Value:}} Reduce man-hours assessment by 90\%+; screening time reduced from 3 days to 2 hours
+    \item \textbf{Intelligent LLM Router with Model Context Protocol (MCP) Integration:} Develop sophisticated LLM routing system using semantic classification and query complexity analysis. Implemented MCP for standardized tool integration enabling dynamic model selection (GPT-4, Claude, Gemini, local Llama via Ollama) based on query type, security requirements, and cost optimization. \textcolor{accent}{\textbf{Value:}} 60\% reduction in LLM costs (\$18K/month savings), 99.9\% uptime SLA
+    \item \textbf{Serverless Data Platform (AWS):} Develop end-to-end ETL/ELT platform using AWS Step Functions for orchestration, Lambda for compute, Glue for data cataloging, and Athena for analytics. Integrated MLflow for experiment tracking and automated model retraining pipelines. \textcolor{accent}{\textbf{Value:}} 70\% reduction in infrastructure costs; real-time business intelligence for Finance, Mining, and IoT domains
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Postdoctoral Research Fellow}{Jan 2024 -- May 2024}{Artificial Intelligence in Transportation, Texas State University, USA}{}
+
+Lead AI technology development for data-driven solutions for safety transportation.
+
+\textit{\textbf{Research Projects:}} (All funded by NHCRP \& TXST)
+\begin{itemize}
+    \item \textbf{AutoML with Explainable AI for Enhancing Prediction of Pedestrian Crash Severity:} Developed automated machine learning pipeline (AutoGluon) integrating SHAP, LIME, and Integrated Gradients for model interpretability. Published in IEEE Transactions on Intelligent Transportation Systems (Q1, IF: 8.5). \textcolor{accent}{\textbf{Output:}} Journal publication (IEEE TITS 2025). \textcolor{accent}{\textbf{Value:}} 95\% prediction accuracy; policy recommendations adopted by transportation agencies
+    \item \textbf{Predicting Pedestrian-Involved Crash Severity using Tabular-to-Image Classification:} Pioneered methodology converting tabular crash data into image representations for CNN/ViT-based classification, achieving 12\% accuracy improvement over conventional tabular methods. \textcolor{accent}{\textbf{Value:}} Reliable and fast severity prediction; novel approach for tabular ML problems
+    \item \textbf{Topic Modeling using BERTopic with LLAMA Integration on Crash Narratives:} Integrated BERTopic clustering with LLAMA-2 (7B) for automated topic representation from crash narratives. Fine-tuned sentence-transformers with UMAP, HDBSCAN, and LoRA fine-tuning for topic labeling. \textcolor{accent}{\textbf{Value:}} Uncovered 23 distinct crash pattern clusters; 5 novel risk factors identified
+    \item \textbf{Advanced BERTopic with LLAMA Integration for Marijuana-Related Crash Analysis:} Applied zero-shot and few-shot learning with GPT-4 for crash narrative classification combined with BERTopic for unsupervised pattern discovery. First comprehensive LLM-based analysis of marijuana-involved crashes. \textcolor{accent}{\textbf{Value:}} Findings presented to NHCRP; influenced national transportation safety policy discussions
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{AI Engineer}{Sept 2023 -- Jan 2024}{INEEJI, South Korea}{}
+
+Develop new algorithm and research end to end AI products apps with new data-driven solutions for various industries.
+
+\textit{\textbf{Key Project:}}
+\begin{itemize}
+    \item \textbf{INFINITE OPTIMAL SERIES™ (Industrial Process Efficiency Optimization XAI Solution):} Develop a Deep Learning based Anomaly Detection (USAD, and Anomaly Transformers) with the advanced level Explainable AI (Kernel SHAP, Integrated Gradient, LIME, Saliency Maps, Deep Lift). Develop AutoML with automatic preprocessing, feature engineering, and automatic hyperparameters tuning. Build software architectures end-to-end, from ingest raw API to stagging database using SQL, deploy all ML models in the apps, until generate the API to the front-end developer. Deploy on Google Cloud Platform with CUDA for high-performance-computing multi-process users. \textcolor{accent}{\textbf{Value:}} Sold to multiple companies in South Korea and Japan; 40\% cost savings and 98\% anomaly detection rate
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Product Data Science Specialist (Remote)}{Aug 2021 -- May 2024}{PT. Cybertrend Intrabuana, Indonesia}{}
+
+Develop and research end to end AI products apps with new data-driven solutions for various industries.
+
+\textit{\textbf{Product Suite:}} (All solutions sold to 30+ companies across Indonesia \& Southeast Asia)
+\begin{itemize}
+    \item \textbf{CybertrendGPT™ for Generative AI ChatBot:} Develop production-grade RAG architecture with hybrid dense+sparse retrieval (FAISS + BM25), semantic chunking, and cross-encoder reranking. Implemented multi-provider LLM support (GPT-3.5/4, HuggingFace models with quantization) and custom guardrails for hallucination detection. \textcolor{accent}{\textbf{Value:}} 80\% reduction in customer support costs; 92\% user satisfaction score
+    \item \textbf{CtrendVision™ for Retail (Customer Segmentation and Data Analytics):} Develop automated customer segmentation using ensemble clustering (K-Means + DBSCAN + Gaussian Mixture). Develop Forecasting using Prophet, LSTM, GRU, BiLSTM, Transformers with automatic hyperparameters optimization. \textcolor{accent}{\textbf{Value:}} 25\% increase in customer retention; 30\% improvement in inventory planning accuracy
+    \item \textbf{CtrendMax™ for Manufacturing (Real Time Anomaly Detection XAI Tools):} Develop real-time anomaly detection (Unsupervised) with explainable AI (SHAP). Develop data analytics for failure process in manufacture with accurate explainability and Plotly dashboard. \textcolor{accent}{\textbf{Value:}} 40\% reduction in false alarms; prevented \$500K+ in equipment failures
+    \item \textbf{CtrendMax™ for Banking (Credit and Churn Scoring):} Develop credit scoring using deep learning (ANN) with adversarial training for fairness. Develop churn prediction using AutoML (AutoGluon + FLAML) with model monitoring and drift detection. \textcolor{accent}{\textbf{Value:}} 15\% improvement in credit approval accuracy; 22\% reduction in customer churn
+    \item \textbf{CtrendMax™ for Aero Transportation (Forecasting):} Develop data staging using SQL for data warehousing. Develop long-period (Prophet) and short-period (LSTM, GRU, BiLSTM, Transformers) forecasting with automatic hyperparameters. \textcolor{accent}{\textbf{Value:}} Cost effectiveness through reliable short-term and long-term planning
+    \item \textbf{CtrendMax™ for Car Rental (Predictive Maintenance):} Develop predictive maintenance using survival-analytics based Kaplan-Meier to estimate car rental lifetime. Develop elastic price car parts estimation based on technical analysis. \textcolor{accent}{\textbf{Value:}} Reduce maintenance costs through reliable maintenance planning
+    \item \textbf{CtrendMax™ for Logistics (Route Optimizer):} Develop high-optimized fast route calculation daily using OSRM based on cost performance. Develop feature engineering for outlet and salesman performance optimization. \textcolor{accent}{\textbf{Value:}} Profit and cost optimization through high-performance outlet routing
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{AI Scientist and Developer}{Sept 2020 -- Aug 2023}{Business Analytics Laboratory, Pukyong National University, South Korea}{}
+Research new Machine Learning Algorithm solutions for various industries and assist graduate students in industrial data science research.
+
+\textit{\textbf{Research Projects:}} (All funded by NRF Korean Government)
+\begin{itemize}
+    \item \textbf{Explainable Anomaly Detection Framework for Maritime Main Engine Sensor Data:} Data-driven approach combining explainable AI (SHAP) with anomaly detection for maritime vessel sensor monitoring. \textcolor{accent}{\textbf{Output:}} Journal publication (Sensors, 2021). \textcolor{accent}{\textbf{Value:}} Reduce maintenance costs; real-time XAI condition monitoring
+    \item \textbf{Performance Evaluation of ML-based Classification in Tarakan Basin, Indonesia:} Supervised learning for automatic lithofacies classification of well-logging data comparing multiple ML algorithms. \textcolor{accent}{\textbf{Output:}} Journal publication (JPSE, 2022). \textcolor{accent}{\textbf{Value:}} Time and cost optimization for facies classification in upstream
+    \item \textbf{Deep Sequence Model-Based Approach to Well Log Data Imputation:} Novel study on well log data imputation for West Natuna Basin using time-series deep learning models. \textcolor{accent}{\textbf{Output:}} Journal publication (JAG, 2023). \textcolor{accent}{\textbf{Value:}} Cost reduction by cutting exploration budget via data reuse
+    \item \textbf{XAI-Driven Contamination for Self-Supervised Seismic Denoising:} Innovative self-supervised strategy for seismic noise reduction using Deep Convolutional Denoising with XAI-generated pixel-level anomaly contamination maps. \textcolor{accent}{\textbf{Output:}} Journal publication (JAG, 2025). \textcolor{accent}{\textbf{Value:}} Cost reduction for optimal denoising method in seismic exploration
+    \item \textbf{HPC CloudBoost: Multi-User Cloud Services Enhancement:} Upgraded server infrastructure to HPC-powered multi-user cloud services with CUDA for simultaneous operations. \textcolor{accent}{\textbf{Value:}} Reduce computation costs via laboratory cloud computing infrastructure
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Data Scientist}{Feb 2021 -- Feb 2023}{Daewoong Pharmaceuticals, South Korea}{}
+
+Develop artificial intelligence end to end apps specific to the pharmaceuticals industry, with target of reducing cost and optimization of the whole industrial process.
+
+\textit{\textbf{Key Projects:}}
+\begin{itemize}
+    \item \textbf{Energy Consumption Prediction: Optimizing Air Handling Systems:} Develop deep learning models for energy consumption prediction with automatic trigger for Air Handling Systems. \textcolor{accent}{\textbf{Value:}} Cost optimization through reliable prediction of energy consumption
+    \item \textbf{Automatic Drug Discovery for Cost-Effective Drug Fabrication:} Develop deep learning-based processing architecture for systematic drug ingredient selection, treatment of drug creation, and post-treatment of drug development in collaboration with Pharmacy SMEs. \textcolor{accent}{\textbf{Value:}} Reduce drug discovery development costs
+    \item \textbf{Anomaly Detection in Air Conditioning Systems:} Develop unsupervised anomaly detection with explainable AI for AC system condition monitoring. Develop MySQL-based data warehouse from real-time sensor and monitoring dashboard. \textcolor{accent}{\textbf{Value:}} Reduce maintenance costs; real-time XAI condition monitoring
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Semiconductor Researcher}{Aug 2018 -- Aug 2020}{Inorganic Semiconductor Laboratory, Pukyong National University, South Korea}{}
+
+Conduct technical synthesis, fabrication, and measurement of semiconductor devices and economic feasibility studies for R\&D projects. (All funded by NRF Korean Government, published in journals)
+
+\vspace{4pt}
+
+\experience{Competency Engineer}{Jan 2018 -- Jun 2018}{Medco E\&P Natuna, Indonesia}{}
+
+Responsible for managing production, manpower performance analysis, and schedule optimization for projects.
+
+\vspace{4pt}
+
+\experience{Relationship Manager}{Jan 2017 -- Nov 2017}{Commonwealth Bank, Indonesia}{}
+
+Specialized in credit analysis, financial consulting, and asset management; developed tailored strategies ensuring effective risk management.
+
+\vspace{2pt}
+
+% Technical Skills
+\section*{FULL STACK AI DATA SCIENTIST SKILLSETS}
+
+\textbf{Large Language Models \& Advanced RAG Systems:} GPT-4/4o, Claude (Opus/Sonnet/Haiku), Gemini, LLaMA 2/3, Mistral/Mixtral, Azure OpenAI, Amazon Bedrock, Ollama, Model Context Protocol (MCP), Advanced RAG Architectures, Hybrid Search (Dense + Sparse), Semantic Chunking, Reranking \& Cross-Encoders, Multi-Vector Retrieval, Vector Databases (Pinecone, Weaviate, Chroma, Qdrant, FAISS), Fine-Tuning (LoRA, QLoRA, PEFT), Instruction Tuning, RLHF \& DPO, Chain-of-Thought Prompting, ReACT Framework, LangChain/LangGraph, LlamaIndex, Agentic AI Frameworks, Multi-Agent Systems, LangSmith, Hallucination Detection
+
+\textbf{Core Machine Learning \& Deep Learning Foundations:} TensorFlow, PyTorch, PyTorch Lightning, scikit-learn, XGBoost, LightGBM, CatBoost, Keras, FastAI, JAX, NumPy, Pandas, SciPy, StatsModels
+
+\textbf{Advanced Deep Learning \& Scientific ML:} Physics-Informed Neural Networks (PINNs), Neural Operators (FNO, DeepONet), Graph Neural Networks (PyTorch Geometric, DGL), Diffusion Models, Variational Autoencoders, Generative Adversarial Networks, Meta-Learning, Few-Shot Learning, Transfer Learning, Domain Adaptation
+
+\textbf{Natural Language Processing:} Transformers (BERT, RoBERTa, T5, GPT), Hugging Face Ecosystem, Sentence Transformers, spaCy, NLTK, Gensim, Named Entity Recognition, Sentiment Analysis, Text Classification, Information Extraction, Question Answering Systems, BERTopic
+
+\textbf{Computer Vision \& Multimodal AI:} YOLO (v5-v11), Detectron2, MMDetection, Segment Anything Model (SAM), OpenCV, Albumentations, CLIP, Vision Transformers (ViT), Object Detection, Semantic Segmentation, Instance Segmentation, Image Generation (Stable Diffusion, DALL-E), 3D Vision, OCR (Tesseract, EasyOCR, PaddleOCR)
+
+\textbf{Explainable AI (XAI):} SHAP, LIME, Integrated Gradients, Attention Visualization, Saliency Maps, Counterfactual Explanations, Model Interpretability Frameworks, AutoGluon, AutoML
+
+\textbf{MLOps \& Production Systems:} MLflow, Weights \& Biases, Neptune.ai, Kubeflow, MLServer, Model Monitoring, A/B Testing, Model Versioning, CI/CD for ML, Model Serving (FastAPI, TorchServe, TensorFlow Serving)
+
+\textbf{High Performance \& Distributed Computing:} CUDA, cuDNN, TensorRT, NVIDIA Triton, OpenMP, Intel oneAPI, Dask, Ray, Distributed Training, Model Parallelism, Data Parallelism, Mixed Precision Training (AMP)
+
+\textbf{Data Engineering \& Big Data:} Apache Spark (PySpark), Apache Kafka, Apache Flink, Apache Beam, Apache Airflow, Hadoop, Data Lakehouse Architecture, ETL/ELT Pipelines, Data Quality Frameworks (Great Expectations)
+
+\textbf{Database Systems:} PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Neo4j, TimescaleDB, ClickHouse, Snowflake, BigQuery, Data Warehousing, OLAP, OLTP
+
+\textbf{Cloud Platforms \& DevOps:} AWS (SageMaker, EC2, S3, Lambda, ECS, Bedrock, Step Functions, Glue, Athena, Kinesis), Google Cloud Platform (Vertex AI, BigQuery, GKE), Azure (Machine Learning, OpenAI Service), Docker, Kubernetes, Terraform, Infrastructure as Code, Serverless Computing
+
+\textbf{Visualization \& Analytics:} Plotly, Dash, Streamlit, Gradio, Matplotlib, Seaborn, Bokeh, Altair, Power BI, Tableau, Grafana, Metabase, Looker, Interactive Dashboards, Real-time Analytics
+
+\textbf{Research \& Scientific Computing:} Jupyter, Google Colab, Weights \& Biases Reports, LaTeX, Research Paper Implementation, Reproducible Research, Experiment Design, Statistical Analysis, Hypothesis Testing, Bayesian Methods
+
+\vspace{2pt}
+
+% Publications
+\section*{PEER REVIEW PUBLICATIONS}
+
+\begin{itemize}
+
+    \item Image-Based Crash Severity Analysis: Transforming Tabular Data Using Convolutional Neural Networks, S. Somvanshi, G. Antariksa, S. Das, J. Liu, A. Hossain, \textit{IEEE Access.} (\href{https://doi.org/10.1109/ACCESS.2026.3526217}{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639}) \textbf{2026}
+
+    \item AI-driven swarm USV operations: A comprehensive bibliometric and analytical review, N. Hamid, G. Antariksa, W. Dharmawan, G. Jati, H. Saleh, S. El Ferik, \textit{Advanced Engineering Informatics 69, 103972.} (\href{https://doi.org/10.1016/j.aei.2025.103972}{https://doi.org/10.1016/j.aei.2025.103972}) \textbf{2026}
+
+    \item XAI-driven contamination for self-supervised denoising with pixel-level anomaly detection in seismic data, G. Antariksa, A. Koeshidayatullah, S. Das, J. Lee, \textit{Journal of Applied Geophysics 238, 105723.} (\href{https://doi.org/10.1016/j.jappgeo.2025.105723}{https://doi.org/10.1016/j.jappgeo.2025.105723}) \textbf{2025}
+
+    \item Comparative Analysis of Advanced AI-based Object Detection Models for Pavement Marking Quality Assessment during Daytime, G. Antariksa, R. Chakraborty, S. Somvanshi, S. Das, M. Jalayer, D.R. Patel, et al., \textit{2025 IEEE Conference on Artificial Intelligence (CAI), 1023--1028.} (\href{https://doi.org/10.1109/CAI59869.2025}{https://doi.org/10.1109/CAI59869.2025}) \textbf{2025}
+
+    \item Revealing equity gaps in pedestrian crash data through explainable artificial intelligence clustering, J. Liu, G. Antariksa, S. Somvanshi, S. Das, \textit{Transportation Research Part D: Transport and Environment 139, 104538.} (\href{https://doi.org/10.1016/j.trd.2024.104538}{https://doi.org/10.1016/j.trd.2024.104538}) \textbf{2025}
+
+    \item Automated and Explainable Artificial Intelligence to Enhance Prediction of Pedestrian Injury Severity, G. Antariksa, R. Tamakloe, J. Liu, S. Das, \textit{IEEE Transactions on Intelligent Transportation Systems 26 (4), 5568--5584.} (\href{https://doi.org/10.1109/TITS.2025.3526217}{https://doi.org/10.1109/TITS.2025.3526217}) \textbf{2025}
+
+    \item A survey on deep tabular learning, S. Somvanshi, S. Das, S.A. Javed, G. Antariksa, A. Hossain, \textit{arXiv preprint arXiv:2410.12034.} (\href{https://arxiv.org/abs/2410.12034}{https://arxiv.org/abs/2410.12034}) \textbf{2024}
+
+    \item Enhanced balanced-generative adversarial networks to predict pedestrian injury types, S. Somvanshi, G. Antariksa, S. Das, \textit{Available at SSRN 4847615.} (\href{https://ssrn.com/abstract=4847615}{https://ssrn.com/abstract=4847615}) \textbf{2024}
+
+    \item Ultraviolet-A electroluminescence from polymorphic CaSiO$_3$:Ce$^{3+}$ in electrolyte-thin film semiconductor, M.M. Afandi, G. Antariksa, T. Kang, J. Kim, \textit{Physica B: Condensed Matter 669, 415315.} (\href{https://doi.org/10.1016/j.physb.2023.415315}{https://doi.org/10.1016/j.physb.2023.415315}) \textbf{2023}
+
+    \item Deep sequence model-based approach to well log data imputation and petrophysical analysis: A case study on the West Natuna Basin, Indonesia, G. Antariksa, R. Muammar, A. Nugraha, J. Lee, \textit{Journal of Applied Geophysics 218, 105213.} (\href{https://doi.org/10.1016/j.jappgeo.2023.105213}{https://doi.org/10.1016/j.jappgeo.2023.105213}) \textbf{2023}
+
+    \item White electroluminescence from Ce$^{3+}$-doped bi-phase calcium silicate in metal-oxide-semiconductor structure, M.M. Afandi, G. Antariksa, J. Kim, \textit{Thin Solid Films 765, 139630.} (\href{https://doi.org/10.1016/j.tsf.2022.139630}{https://doi.org/10.1016/j.tsf.2022.139630}) \textbf{2023}
+
+    \item Improving Geological Interpretation and Prediction for Hydrocarbon Exploration using ML-Based Approaches, A. Gian, \textit{Ph.D. Thesis, Pukyong National University.} \textbf{2023}
+
+    \item Reconstruction of old well log data using deep learning imputation, G. Antariksa, R. Muammar, A. Nugraha, J. Lee, \textit{Proceedings of the Korean Institute of Industrial Engineers Fall Conference,} 3440--3461 \textbf{2022}
+
+    \item White electroluminescence from cross relaxation-free CaSiO$_3$:Tb$^{3+}$ film on silicon wafer and its concentration dependent white-color tunability, H. Jung, M.M. Afandi, G. Antariksa, J. Park, J. Kim, \textit{Journal of Luminescence 251, 119177.} (\href{https://doi.org/10.1016/j.jlumin.2022.119177}{https://doi.org/10.1016/j.jlumin.2022.119177}) \textbf{2022}
+
+    \item Blue-green tunable electroluminescence from Y$_2$SiO$_5$:Tb$^{3+}$ phosphor, M.M. Afandi, G. Antariksa, H. Kang, T. Kang, J. Kim, \textit{Journal of Luminescence 251, 119201.} (\href{https://doi.org/10.1016/j.jlumin.2022.119201}{https://doi.org/10.1016/j.jlumin.2022.119201}) \textbf{2022}
+
+    \item Performance evaluation of machine learning-based classification with rock-physics analysis of geological lithofacies in Tarakan Basin, Indonesia, G. Antariksa, R. Muammar, J. Lee, \textit{Journal of Petroleum Science and Engineering 208, 109250.} (\href{https://doi.org/10.1016/j.petrol.2021.109250}{https://doi.org/10.1016/j.petrol.2021.109250}) \textbf{2022}
+
+    \item Decay Assessment for Propeller of the Frigate Naval Propulsion System with Explainable Artificial Intelligence, M.P. Handayani, G. Antariksa, J. Lee, \textit{Proceedings of the Korean Institute of Industrial Engineers Fall Conference,} 1393--1401 \textbf{2021}
+
+    \item Explainable anomaly detection framework for maritime main engine sensor data, D. Kim, G. Antariksa, M.P. Handayani, S. Lee, J. Lee, \textit{Sensors 21 (15), 5200.} (\href{https://doi.org/10.3390/s21155200}{https://doi.org/10.3390/s21155200}) \textbf{2021}
+
+    \item Anomaly detection in vessel sensors data with unsupervised learning technique, M.P. Handayani, G. Antariksa, J. Lee, \textit{2021 International Conference on Electronics, Information, and Communication (ICEIC).} (\href{https://doi.org/10.1109/ICEIC51217.2021}{https://doi.org/10.1109/ICEIC51217.2021}) \textbf{2021}
+
+    \item Study on ultraviolet-a of CaSiO$_3$:Ce$^{3+}$ film phosphor, A. Gian, \textit{Master's Thesis, Pukyong National University.} \textbf{2020}
+
+    \item Analisis Porositas Dan Saturasi Air Dalam Integrasi Petrophysics Dan Seismic Multiattributes Untuk Karakterisasi Reservoir, G. Antariksa, H. Danusaputro, T. Yulianto, \textit{Youngster Physics Journal.} \textbf{2016}
+
+\end{itemize}
+
+\textit{See \href{https://scholar.google.com/citations?user=5BawrcEAAAAJ\&hl=en}{Google Scholar} for complete publication list (200+ citations)}
+
+\vspace{2pt}
+
+% Conferences
+\section*{CONFERENCES \& PRESENTATIONS}
+
+\textbf{Fall Conference of the Industrial Engineering Society of Korea} (2022): Reconstruction of old well log data using deep learning imputation; Decay assessment for propeller of the frigate naval propulsion system with XAI intelligence
+
+\textbf{International Conference on Electronics, Information, and Communication (ICEIC)} (2021): Anomaly detection in vessel sensors data with unsupervised learning technique
+
+\textbf{International Conference on Advanced Imaging, Japan} (2019): Optical and Electrical Properties of Y$_2$SiO$_5$:Eu$^{3+}$ Powder Electroluminescent Device
+
+\textbf{International Conference on Dynamical Processes in Excited States of Solids (DPE-SS), New Zealand} (2019): Photon-phonon coupling in Y$_3$Al$_5$O$_{12}$:Ce$^{3+}$ nanophosphor; Thermal and concentration dependence in AC-driven powder electroluminescence
+
+\vspace{2pt}
+
+% Certificates & Awards
+\section*{CERTIFICATES \& AWARDS}
+
+\begin{itemize}
+    \item Certificate of achievement in ``AI Big Data Joint Research'' from Daewoong Pharmaceuticals (2022)
+    \item \textbf{1st Place} - Busan Shipbuilding Hackathon: Real-Time Ship Safety Anomaly Detection (2021)
+    \item \textbf{3rd Place} - Daewoong Big Data Hackathon: Sano Personal Health Assistant (2021)
+    \item \textbf{2nd Place} - DRB Rubber Industry Hackathon: Anomaly Detection on Manufacture Rubber Machine
+    \item As the scholarship awardee ``Daewoong Big Data Project Scholarship'' (2021--2023)
+    \item As the Government scholarship awardee ``NRF BK-21 South Korea Scholarship'' (2018--2023)
+\end{itemize}
+
+\end{document}
