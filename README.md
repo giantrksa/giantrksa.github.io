@@ -1,69 +1,71 @@
-# Gian Antariksa - Interactive 3D Portfolio
+# Gian Antariksa — Portfolio (GitHub Pages)
 
-An interactive 3D portfolio built with Three.js, featuring a drivable car that navigates through project showcases and experience sections.
+Live at **https://giantrksa.github.io**
 
-## Features
+This repository deploys **one cohesive portfolio in two connected layers**:
 
-- **3D Interactive Navigation**: Drive a car through the portfolio using arrow keys or touch controls
-- **Publication Showcases**: 4 key research publications with direct DOI links
-- **Experience Timeline**: 6 detailed work experience cards displayed on the floor
-- **Personal Website Integration**: Links to full HTML portfolio with detailed sections
-- **Social Links**: Scholar, GitHub, LinkedIn, and Email contact areas
+| Layer | Path | What it is |
+|-------|------|------------|
+| **3D landing** | `/` (`index.html`) | Interactive Three.js "drivable car" experience. Compiled bundle in `assets/`. |
+| **Detail page** | `/portfolio/` | Full scrolling CV: education, experience, publications, skills, projects, awards, contact. |
 
-## Sections
+The two are linked both ways:
+- The 3D landing shows an **"Enter Full Portfolio →"** button (and the in-world ABOUT box) that opens `/portfolio/`.
+- The detail page has a **"← 3D Experience"** link back to `/`.
 
-### Start Point
-- Centered "ABOUT" border box linking to full portfolio homepage
+---
 
-### Projects Section (Publications)
-1. **IEEE TITS Publication** - Automated & Explainable AI for Pedestrian Injury Severity
-2. **Maritime XAI Anomaly** - Explainable Anomaly Detection for Maritime Sensors
-3. **Deep Tabular Survey** - A Survey on Deep Tabular Learning
-4. **XAI Seismic Denoising** - Self-Supervised Denoising with Pixel-Level Anomaly Detection
+## Editing content
 
-### Information Section (Experience)
-- Data Scientist @ Philip Morris International (2026-Present)
-- Senior Data Scientist @ PT. Mitra Solusi Telematika (2024-2026)
-- Postdoctoral Fellow @ Texas State University (2024)
-- AI Engineer @ INEEJI, South Korea (2023-2024)
-- Data Science Specialist @ PT. Cybertrend Intrabuana (2021-2024)
-- AI Scientist @ Pukyong National University (2020-2023)
+**You almost never touch HTML.** All text on the detail page comes from a single file:
 
-## Tech Stack
-
-- **Three.js** - 3D graphics and rendering
-- **Cannon.js** - Physics engine for car simulation
-- **GSAP** - Smooth animations
-- **Vite** - Build tool and dev server
-- **Howler.js** - Audio management
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
+```
+portfolio/js/data.js   ← edit this to change any content
 ```
 
-## Controls
+One publication = one object, one job = one object. The page is generated from these objects at load time.
 
-- **Arrow Keys / WASD**: Drive the car
-- **E / F / Enter**: Interact with highlighted areas
-- **Touch**: Swipe to drive (mobile)
+```
+portfolio/
+├── index.html          # slim shell: static hero/about + empty section mounts
+├── css/
+│   ├── base.css        # variables, reset, typography, buttons, utilities
+│   ├── layout.css      # navbar, hero, section headers, footer, responsive
+│   └── components.css  # cards, timeline, tags, metrics, etc.
+├── img/                # photos (e.g. GIAN_VIEW_move.jpeg)
+├── resume/             # downloadable CV PDFs
+└── js/
+    ├── data.js         # ⭐ ALL content (edit here)
+    ├── render.js       # turns data.js into DOM (rarely edited)
+    └── ui.js           # interactions: nav, scroll-spy, filters, toggles, counters
+```
 
-## Author
+### Common edits
+- **Add a publication** → add an object to the `publications` array in `data.js`.
+- **Add a job** → add an object to the `experience` array (add a `projects` array for an expandable details panel).
+- **Change a stat** → edit the `stats` array (hero counters read from it).
+- **Add a skill group** → add an object to the `skills` array.
 
-**Dr. Gian Antariksa, Ph.D.**
-- Google Scholar: [200+ citations](https://scholar.google.com/citations?user=5BawrcEAAAAJ)
-- GitHub: [giantrksa](https://github.com/giantrksa)
-- LinkedIn: [antrks](https://linkedin.com/in/antrks)
-- Email: gian.antariksa@gmail.com
+---
 
-## License
+## The 3D landing (`/`)
 
-MIT License
+The root experience is a **compiled build** (`assets/index-*.js` / `.css`). It is not edited directly here — it is the production output of a separate Three.js/Vite project (Cannon.js physics, GSAP, Howler.js audio). To change the 3D world itself, rebuild from that source project and replace the files in `assets/`, `models/`, `draco/`, and `sounds/`.
+
+The editable parts of the landing are `index.html` (metadata, overlay text, the "Enter Full Portfolio" CTA) and `favicon/site.webmanifest`.
+
+**Controls:** Arrow keys / WASD to drive · E / F / Enter to interact · swipe on mobile.
+
+---
+
+## Deployment
+
+GitHub Pages serves this repo as-is (static). `.nojekyll` disables Jekyll processing so folders like `assets/` and `draco/` are published untouched. No build step runs on push.
+
+## Contact
+- **Email:** gian.antariksa@gmail.com
+- **LinkedIn:** [linkedin.com/in/antrks](https://linkedin.com/in/antrks)
+- **GitHub:** [github.com/giantrksa](https://github.com/giantrksa)
+- **Google Scholar:** [200+ citations](https://scholar.google.com/citations?user=5BawrcEAAAAJ)
+
+© 2026 Gian Antariksa. All rights reserved.

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dr. Gian Antariksa - Ph.D. in Industrial Data Science | AI Expert | Machine Learning Scientist specializing in LLM, RAG Systems, Deep Learning, and MLOps">
+    <meta name="keywords"
+        content="AI Expert, Data Scientist, Machine Learning, Deep Learning, LLM, RAG Systems, MLOps, Computer Vision, NLP">
+    <meta name="author" content="Gian Antariksa">
+    <title>Dr. Gian Antariksa | AI Expert & Data Scientist</title>
+
+    <!-- Styles: base -> layout -> components -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Content (data.js) is rendered by ui.js -> render.js -->
+    <script type="module" src="js/ui.js"></script>
+</head>
+
+<body>
+    <!-- ========== Navigation ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/" class="nav-home" title="Back to 3D experience">&larr; 3D Experience</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== Hero (static for fast first paint + SEO) ========== -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Available for Collaboration</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Dr. Gian Antariksa</span>
+                        <span class="gradient-text">AI Expert &amp; Data Scientist</span>
+                    </h1>
+                    <div class="hero-meta">
+                        <div class="hero-role">Data Scientist @ Philip Morris International &middot; LLM Systems
+                            Architect &middot; AI Research Scientist</div>
+                        <div class="hero-location">Jakarta &middot; Busan &middot; Austin &middot; Global Collaborations
+                        </div>
+                    </div>
+                    <div class="hero-tags">
+                        <span class="hero-pill">LLM Fine-Tuning</span>
+                        <span class="hero-pill">Advanced RAG Systems</span>
+                        <span class="hero-pill">Model Context Protocol</span>
+                        <span class="hero-pill">Agentic AI</span>
+                        <span class="hero-pill">MLOps &amp; Solution Architecture</span>
+                    </div>
+                    <p class="hero-description">
+                        Ph.D. in Industrial Data Science with 9+ years of expertise architecting production-scale LLM
+                        systems, advanced Retrieval-Augmented Generation (RAG) platforms, and fine-tuning methodologies
+                        (LoRA, QLoRA, RLHF). Specializing in Model Context Protocol integration, multi-agent
+                        orchestration, chain-of-thought reasoning, and enterprise LLM deployment with sophisticated
+                        prompt engineering and model optimization techniques.
+                    </p>
+                    <p class="hero-note">
+                        Currently driving data-driven innovation as Data Scientist at <strong>Philip Morris
+                            International (PMI)</strong>, developing ML solutions for consumer analytics, demand
+                        forecasting, and commercial intelligence.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#publications" class="btn btn-primary">
+                            <span>View Publications</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10L13 10M13 10L10 7M13 10L10 13" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="resume/Resume_Gian.pdf" class="btn btn-secondary" download>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 13V3M10 13L7 10M10 13L13 10M3 17H17" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                    <!-- Stats injected from data.js (#hero-stats) -->
+                    <div class="hero-stats" id="hero-stats"></div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-frame">
+                            <img src="img/GIAN_VIEW_move.jpeg" alt="Dr. Gian Antariksa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== About (static) ========== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-main">
+                    <p class="lead">
+                        Over the past nine years, I have architected and deployed <strong>production-scale Large
+                            Language Model systems, advanced Retrieval-Augmented Generation (RAG) platforms, and
+                            fine-tuned LLMs</strong> using cutting-edge techniques including LoRA, QLoRA, and RLHF. My
+                        expertise spans <strong>end-to-end LLM engineering</strong>&mdash;from data ingestion and vector
+                        database optimization to model fine-tuning, agentic AI orchestration, and serverless deployment
+                        architectures on AWS and GCP.
+                    </p>
+                    <p>
+                        I hold a <strong>Ph.D. in Industrial Data Science and Engineering</strong> from Pusan National
+                        University &amp; Pukyong National University (Joint Degree, QS &lt;500) with an outstanding CGPA
+                        of <strong>4.15/4.50</strong>. My dissertation pioneered machine learning approaches for
+                        geological interpretation, while my current work at <strong>Philip Morris International
+                            (PMI)</strong> focuses on consumer analytics, demand forecasting, and AI-powered commercial
+                        intelligence at scale.
+                    </p>
+                    <p>
+                        Professionally, I have <strong>nine+ years of diverse experience</strong> designing AI solution
+                        architectures that reduce operational costs by up to 60% through intelligent LLM routing,
+                        automated reasoning systems, and explainable AI frameworks. My work spans <strong>banking,
+                            mining, transportation, semiconductor, manufacturing, pharmaceuticals, FMCG, media, and oil
+                            &amp; gas</strong>&mdash;delivering measurable business value through sophisticated AI
+                        engineering and MLOps practices.
+                    </p>
+                    <p>
+                        My research contributions include <strong>20+ peer-reviewed publications</strong> in IEEE
+                        Transactions, Journal of Applied Geophysics, and Transportation Research, with <strong>200+
+                            research citations</strong>, focusing on advanced deep learning, explainable AI, and novel
+                        LLM applications. I've won multiple AI hackathons and received prestigious scholarships including
+                        the NRF BK-21 South Korea Scholarship, demonstrating both theoretical rigor and practical
+                        implementation excellence.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎯</div>
+                        <h3>Expertise Areas</h3>
+                        <ul>
+                            <li>Advanced RAG Systems &amp; Vector Database Optimization</li>
+                            <li>LLM Fine-Tuning (LoRA, QLoRA, RLHF, Instruction Tuning)</li>
+                            <li>Model Context Protocol &amp; Agentic AI Frameworks</li>
+                            <li>Chain-of-Thought Reasoning &amp; Prompt Engineering</li>
+                            <li>Serverless LLM Deployment &amp; MLOps at Scale</li>
+                            <li>Explainable AI &amp; Model Interpretability</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🏆</div>
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>1st Place - Busan Shipbuilding Hackathon 2021</li>
+                            <li>3rd Place - Daewoong Big Data Hackathon 2021</li>
+                            <li>20+ Peer-Reviewed Publications</li>
+                            <li>200+ Research Citations</li>
+                            <li>Government Scholarship Awardee (2018-2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Education (rendered: #education-timeline) ========== -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="timeline" id="education-timeline"></div>
+        </div>
+    </section>
+
+    <!-- ========== Experience (rendered: #experience-grid) ========== -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Professional Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="experience-grid" id="experience-grid"></div>
+        </div>
+    </section>
+
+    <!-- ========== Publications (rendered) ========== -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Research Contributions</span>
+                <h2 class="section-title">Peer-Reviewed Publications</h2>
+                <p class="section-description">20+ publications in respected journals and conferences | 200+ citations
+                </p>
+            </div>
+            <div class="publications-filter" id="publications-filter"></div>
+            <div class="publications-list" id="publications-list"></div>
+            <div class="publications-cta" id="publications-cta"></div>
+        </div>
+    </section>
+
+    <!-- ========== Skills (rendered: #skills-showcase) ========== -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Technical Arsenal</span>
+                <h2 class="section-title">Full Stack AI Data Scientist Skillsets</h2>
+            </div>
+            <div class="skills-showcase" id="skills-showcase"></div>
+        </div>
+    </section>
+
+    <!-- ========== Interactive Projects (rendered) ========== -->
+    <section id="projects" class="projects-interactive">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Featured Work</span>
+                <h2 class="section-title">Interactive Project Showcase</h2>
+            </div>
+            <div class="projects-tabs" id="projects-tabs"></div>
+            <div class="projects-showcase" id="projects-showcase"></div>
+        </div>
+    </section>
+
+    <!-- ========== Awards (rendered: #awards-grid) ========== -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Recognition</span>
+                <h2 class="section-title">Awards &amp; Achievements</h2>
+            </div>
+            <div class="awards-grid" id="awards-grid"></div>
+        </div>
+    </section>
+
+    <!-- ========== Contact (rendered: #contact-grid) ========== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Open to collaboration on AI research, consulting opportunities, and innovative projects
+                </p>
+            </div>
+            <div class="contact-grid" id="contact-grid"></div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Dr. Gian Antariksa</h3>
+                    <p>AI Expert &amp; Data Scientist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/">3D Experience</a>
+                    <a href="#home">Home</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gian Antariksa. All rights reserved.</p>
+                <p>Ph.D. in Industrial Data Science &amp; Engineering</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+/* ==========================================
+   BASE — variables, reset, typography, buttons, utilities
+   Dr. Gian Antariksa — Black Minimalism theme
+   ========================================== */
+
+:root {
+    /* The theme is intentionally pure-black; one value, semantic names. */
+    --black: #000000;
+    --ink-900: var(--black);
+    --panel: var(--black);
+    --panel-alt: var(--black);
+
+    --panel-highlight: rgba(255, 255, 255, 0.03);
+    --border-soft: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.14);
+
+    --text-strong: #f9f6ef;
+    --text-body: #c2c2c2;
+    --text-muted: #8a8a8a;
+
+    --accent-primary: #c29bff;
+    --accent-secondary: #7de2ff;
+    --accent-tertiary: #ff8a65;
+    --success: #84ffa2;
+
+    --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.45);
+    --shadow-medium: 0 25px 60px rgba(0, 0, 0, 0.55);
+    --max-width: 1180px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--ink-900);
+    color: var(--text-body);
+    line-height: 1.7;
+    min-height: 100vh;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.container {
+    width: min(100%, var(--max-width));
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-strong);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+p {
+    color: var(--text-body);
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    letter-spacing: 0.01em;
+}
+
+.btn svg {
+    pointer-events: none;
+}
+
+.btn-primary {
+    background: linear-gradient(110deg, var(--accent-primary), var(--accent-secondary));
+    color: #030303;
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.btn-secondary {
+    border-color: var(--border-strong);
+    color: var(--text-strong);
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+/* UTILITIES — scroll reveal (set by ui.js) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: none;
+}
+
+/* Toast shown when an email is copied */
+.copy-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(132, 255, 162, 0.92);
+    color: #041007;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    z-index: 10000;
+    animation: fadeInOut 2s ease;
+}
+
+/* KEYFRAMES */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+}
